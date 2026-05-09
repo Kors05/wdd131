@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preview</title>
+
+    <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Eze</title>
+
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Emmanuel Eze, HTML, CSS, JavaScript, web design fundamentals">
+
+    <meta name="author" content="Emmanuel Eze">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <p>Hello world</p>
+
+    <header>
+        <span id="course-title">
+            WDD 131: Dynamic Web Fundamentals
+        </span>
+
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                target="_blank">
+                Scripture
+            </a>
+
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Emmanuel Eze</h1>
+
+        <!-- About Me Card -->
+        <section class="card about-card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <p>
+                        My name is Emmanuel Eze. I enjoy learning web
+                        development and building modern websites.
+                        I love technology, creativity, and improving
+                        my programming skills every day.
+                    </p>
+                </div>
+
+                <img src="images/profile.jpeg" alt="Profile Image">
+            </div>
+
+            <div class="country-section">
+
+                <h3>Abuja, Nigeria</h3>
+
+                <div class="country-content">
+
+                    <figure>
+                        <img src="images/nigeria-flag.png"
+                            alt="Official Flag of Nigeria">
+
+                        <figcaption>
+                            Official Flag of Nigeria
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Nigeria is located in West Africa and is known
+                        for its diverse cultures, music, technology,
+                        and entrepreneurial spirit. It is the most
+                        populous country in Africa and home to many
+                        beautiful traditions and languages.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Resources Card -->
+        <section class="card resources-card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+
+                <li><a href="https://www.smashingmagazine.com/"
+                        target="_blank">Smashing Magazine</a></li>
+
+                <li><a href="https://css-tricks.com/"
+                        target="_blank">CSS Tricks</a></li>
+
+                <li><a href="https://www.w3schools.com/"
+                        target="_blank">W3 Schools</a></li>
+
+                <li><a href="https://www.udemy.com/"
+                        target="_blank">Udemy</a></li>
+
+                <li><a href="https://picsum.photos/"
+                        target="_blank">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌸 Emmanuel Eze 🌸 Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
 </html>
