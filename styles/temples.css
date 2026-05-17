@@ -40,10 +40,6 @@ h1 {
 #menu.open::before {
     content: "✖";
 }
-.nav {
-    display: flex;
-    flex-direction: column;
-}
 
 .navigation {
     display: flex;
@@ -64,7 +60,7 @@ h1 {
     color: #4b0082;
 }
 
-.open a {
+.navigation.open a {
     display: block;
 }
 
