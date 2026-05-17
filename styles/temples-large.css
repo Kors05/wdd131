@@ -4,14 +4,14 @@
         display: none;
     }
 
-    .navigation {
-        flex-direction: row;
-        justify-content: center;
-    }
+    nav.navigation {
+    flex-direction: row;
+    justify-content: center;
+}
 
-    .navigation a {
-        display: block;
-    }
+nav.navigation a {
+    display: block;
+}
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
