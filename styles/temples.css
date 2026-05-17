@@ -40,6 +40,10 @@ h1 {
 #menu.open::before {
     content: "✖";
 }
+.nav {
+    display: flex;
+    flex-direction: column;
+}
 
 .navigation {
     display: flex;
