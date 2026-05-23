@@ -24,11 +24,16 @@
 
     <!-- HERO -->
     <section class="hero">
-      <picture>
-        <source srcset="images/abuja.jpg" media="(min-width: 768px)" />
-        <img src="images/abuja.jpg" alt="City view of Abuja" />
-      </picture>
-    </section>
+  <picture>
+    <!-- WebP version (preferred) -->
+    <source srcset="images/abuja.webp" type="image/webp">
+
+    <!-- Fallback for older browsers -->
+    <source srcset="images/abuja.jpg" type="image/jpeg">
+
+    <img src="images/abuja.jpg" alt="City view of Abuja">
+  </picture>
+</section>
 
     <!-- INFO -->
     <section class="info">
