@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #008751;   /* Nigeria green */
+  --accent-color: #fcd116;    /* flag yellow */
+  --text-color: #222;
+  --bg-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+/* HEADER */
+header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* HERO IMAGE */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MAIN LAYOUT */
+main {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* INFO + WEATHER BOXES */
+.info, .weather {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* DESKTOP LAYOUT */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  /* required pseudo-element */
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 1rem;
+}

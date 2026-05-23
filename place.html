@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abuja | Country Page</title>
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Abuja</h1>
+    <p>Federal Capital Territory, Nigeria</p>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/abuja.jpg" media="(min-width: 768px)">
+        <img src="images/abuja-small.webp" alt="City view of Abuja">
+      </picture>
+    </section>
+
+    <!-- INFO -->
+    <section class="info">
+      <h2>About Abuja</h2>
+      <p>Abuja is the capital city of Nigeria, known for its modern architecture, planned layout, and iconic landmarks like Aso Rock.</p>
+    </section>
+
+    <!-- WEATHER -->
+    <section class="weather">
+      <h2>Weather</h2>
+
+      <p>Temperature: <span id="temp">34</span> °C</p>
+      <p>Wind Speed: <span id="wind">8</span> km/h</p>
+
+      <p>Wind Chill: <span id="windchill"></span></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Abuja Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
