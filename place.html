@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Abuja city page showcasing key information about Nigeria's capital, including weather, geography, and landmarks." />
+  <meta name="author" content="Kors Manuel" />
+
   <title>Abuja | Country Page</title>
 
   <link rel="stylesheet" href="styles/place.css">
@@ -21,25 +24,62 @@
     <!-- HERO -->
     <section class="hero">
       <picture>
-        <source srcset="images/abuja.jpg" media="(min-width: 768px)">
-        <img src="images/abuja-small.webp" alt="City view of Abuja">
+        <source srcset="images/abuja.jpg" media="(min-width: 768px)" />
+        <img src="images/abuja.jpg" alt="City view of Abuja" />
       </picture>
     </section>
 
     <!-- INFO -->
     <section class="info">
       <h2>About Abuja</h2>
-      <p>Abuja is the capital city of Nigeria, known for its modern architecture, planned layout, and iconic landmarks like Aso Rock.</p>
+      <p>
+        Abuja is the capital city of Nigeria, known for its modern architecture,
+        planned layout, and iconic landmarks like Aso Rock.
+      </p>
     </section>
 
     <!-- WEATHER -->
     <section class="weather">
       <h2>Weather</h2>
 
-      <p>Temperature: <span id="temp">34</span> °C</p>
-      <p>Wind Speed: <span id="wind">8</span> km/h</p>
+      <div class="weather-card">
 
-      <p>Wind Chill: <span id="windchill"></span></p>
+        <!-- Temperature -->
+        <div class="weather-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.76V5a2 2 0 0 0-4 0v9.76a4 4 0 1 0 4 0z"/>
+          </svg>
+          <p>Temperature: <span id="temp">34</span> °C</p>
+        </div>
+
+        <!-- Wind Speed -->
+        <div class="weather-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h11a3 3 0 1 0-3-3"/>
+            <path d="M3 6h7"/>
+            <path d="M3 18h14a3 3 0 1 0-3-3"/>
+          </svg>
+          <p>Wind Speed: <span id="wind">8</span> km/h</p>
+        </div>
+
+        <!-- Wind Chill -->
+        <div class="weather-item">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20"/>
+            <path d="M4 12h16"/>
+            <path d="M5 5l14 14"/>
+            <path d="M19 5L5 19"/>
+          </svg>
+          <p>Wind Chill: <span id="windchill"></span></p>
+        </div>
+
+      </div>
     </section>
 
   </main>
