@@ -4,11 +4,12 @@
         display: none;
     }
 
-    .navigation {
+    nav ul.navigation {
         flex-direction: row;
+        justify-content: center;
     }
 
-    .navigation a {
+    nav ul.navigation li a {
         display: block;
     }
 

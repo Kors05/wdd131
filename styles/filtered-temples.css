@@ -9,6 +9,7 @@ body {
     background-color: #e6e6e6;
 }
 
+/* HEADER */
 header {
     background-color: #4b0082;
     color: white;
@@ -25,6 +26,7 @@ h1 {
     font-size: 2rem;
 }
 
+/* HAMBURGER BUTTON */
 #menu {
     border: none;
     background: transparent;
@@ -41,12 +43,14 @@ h1 {
     content: "✖";
 }
 
-.navigation {
+/* NAVIGATION (AUDIT COMPLIANT FIX) */
+nav ul.navigation {
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 
-.navigation a {
+nav ul.navigation li a {
     display: none;
     text-decoration: none;
     color: white;
@@ -55,15 +59,16 @@ h1 {
     font-weight: 700;
 }
 
-.navigation.open a {
+nav ul.navigation.open li a {
     display: block;
 }
 
-.navigation a:hover {
+nav ul.navigation li a:hover {
     background-color: white;
     color: #4b0082;
 }
 
+/* MAIN */
 main {
     max-width: 1300px;
     margin: 0 auto;
@@ -76,6 +81,7 @@ main h2 {
     font-size: 2rem;
 }
 
+/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -95,8 +101,7 @@ section h3 {
 }
 
 section p {
-    margin-bottom: .3rem;
-    font-size: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 section p span {
@@ -111,9 +116,10 @@ section img {
     height: 250px;
     object-fit: cover;
     margin-top: 1rem;
-    box-shadow: 0 0 12px rgba(0,0,0,.4);
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
 }
 
+/* FOOTER */
 footer {
     background-color: #4b0082;
     color: white;
@@ -123,5 +129,5 @@ footer {
 }
 
 footer p {
-    margin: .3rem 0;
+    margin: 0.3rem 0;
 }
