@@ -1,0 +1,113 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* ===== Main Layout ===== */
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Form Styling ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* Inputs, Select, Textarea */
+input,
+select,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Textarea height */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ===== Fieldsets (Rating + Features) ===== */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+/* ===== Radio & Checkbox Layout ===== */
+fieldset label {
+  font-weight: normal;
+  display: block;
+  margin: 0.3rem 0;
+}
+
+/* ===== Submit Button ===== */
+input[type="submit"] {
+  background-color: #1f3a5f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #2c5aa0;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
